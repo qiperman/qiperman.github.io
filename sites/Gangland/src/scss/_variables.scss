@@ -1,0 +1,30 @@
+//=== COLORS ===
+$color-dark: #323232;
+$color-white: #ffffff;
+$color-body-bg: #eeeeee;
+$color-text-dark: #000000;
+$color-header-icons: #a1a1a1;
+$color-sky: #e8fdff;
+$color-gray-light: #fafafa;
+$color-gray-dark: #323232;
+$color-text: #282828;
+$color-text-darken: #1f1f1f;
+$color-primary: #fd5c5c;
+$color-primary-lighter: #ffbfbf;
+$color-primary-light: #ffb8b8;
+$footer-bg: #fd5c5c;
+//=== /COLORS ===
+
+
+//=== SIZING ===
+$font-size: 18px;
+
+//=== /SIZING ===
+
+$breakpoints: (
+        "mobileXs": 470px,
+        "mobile": 576px,
+        "tablet": 768px,
+        "tabletXl": 980px,
+        "laptop": 1150px,
+);
