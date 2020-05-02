@@ -1,0 +1,16 @@
+@import "gotham";
+@import "gotham-black";
+@import "gotham-book";
+
+
+@mixin font-primary(){
+  font-family: "GothamHtf-Book", sans-serif;
+}
+
+@mixin font-secondary(){
+  font-family: "GothamHtf", sans-serif;
+}
+
+@mixin font-tertiary(){
+  font-family: "GothamHtf-Black", sans-serif;
+}

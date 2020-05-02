@@ -1,0 +1,38 @@
+html{
+  font-size: $font-size;
+  line-height: 1.4;
+
+  @include screen-max(mobile){
+    font-size: 14px;
+  }
+}
+
+body{
+  @include font-primary();
+  font-size: 1rem;
+}
+
+.wrapper{
+  max-width: 1145px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-wrapper{
+  @include screen-max(tablet){
+    padding-top: 130px;
+  }
+
+  @include screen-max(mobile){
+    padding-top: 106px;
+  }
+}
+
+@include screen-max(mobile){
+  h2{
+    font-size: 2rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+}
