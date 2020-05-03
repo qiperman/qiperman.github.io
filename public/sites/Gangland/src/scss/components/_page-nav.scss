@@ -1,0 +1,30 @@
+.page-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+  &__item{
+    @include font-secondary();
+    color: $color-text-dark;
+    font-size: 1.22rem;
+    text-decoration: none;
+    display: block;
+    transition: color .3s;
+    outline: none;
+
+    &+&{
+      margin-left: 35px;
+    }
+
+    &:focus,
+    &:hover{
+      color: $color-primary;
+    }
+
+    &:last-child{
+      margin-left: auto;
+    }
+  }
+}

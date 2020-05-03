@@ -1,0 +1,143 @@
+.page-header{
+  @include font-secondary();
+  box-shadow: -3px 4px 7px 1px rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+  padding: 20px 0;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include screen-max(tabletXl){
+      display: block;
+    }
+  }
+
+  &__logo{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-text-dark;
+    max-width: 180px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 2px;
+    transition: color .3s;
+
+    &:focus{
+      color: $color-primary;
+      outline: none;
+    }
+
+    &:hover{
+      color: $color-primary;
+    }
+
+    img{
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    @include screen-max(tabletXl){
+      margin: 0 auto 10px;
+    }
+
+    @include screen-max(tablet){
+      margin: 0 auto;
+    }
+
+  }
+
+  &__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-max(tablet){
+      display: none;
+    }
+
+    .page-header-menu-item{
+      &+.page-header-menu-item{
+        margin-left: 40px;
+      }
+
+      &_social{
+        &+.page-header-menu-item_social{
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+
+  &-menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-header-icons;
+    text-decoration: none;
+    transition: color .3s;
+    position: relative;
+    outline: none;
+
+    &__icon{
+      width: 37px;
+      height: 37px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      border-radius: 50%;
+      padding: 8px;
+
+      .icon{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__text{
+      color: $color-text-dark;
+      margin-left: 10px;
+      transition: color .3s;
+    }
+
+    &:focus,
+    &:hover{
+      color: $color-primary;
+      .page-header-menu-item__text{
+        color: $color-primary;
+      }
+    }
+  }
+
+  .burger{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+    @include screen-max(tablet){
+      display: block;
+    }
+  }
+
+  @include screen-max(tablet){
+    position: fixed;
+    top: 0;
+  }
+
+  @include screen-max(mobile){
+    padding: 10px 0;
+
+    img{
+      margin-bottom: 5px;
+    }
+  }
+}
