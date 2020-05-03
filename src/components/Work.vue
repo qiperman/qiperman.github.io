@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     image() {
-      return require(`@/assets/images/${this.work.img}`);
+      return require(`@public/thumbs/${this.work.img}`);
     }
   }
 };

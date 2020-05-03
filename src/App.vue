@@ -15,7 +15,7 @@
 import Work from "./components/Work.vue";
 import TheHeader from "./components/TheHeader";
 import PageTitle from "./components/PageTitle";
-import WORKS from "@/assets/works.json";
+import WORKS from "@public/works.json";
 
 export default {
   name: "App",
