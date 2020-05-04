@@ -1,6 +1,12 @@
 [
   {
     "type": "Верстка",
+    "title": "Alonzo",
+    "img": "3.png",
+    "link": "/sites/Alonzo/build/index.html"
+  },
+  {
+    "type": "Верстка",
     "title": "Gangland",
     "img": "2.png",
     "link": "/sites/Gangland/build/index.html"
