@@ -1,0 +1,206 @@
+.catalog {
+  padding: 120px 0;
+  background-image: linear-gradient(-225deg, $color-primary 0%, $color-secondary 100%);
+  color: $color-white;
+  text-align: center;
+
+  @include screen-max(tablet){
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+
+    @include screen-max(tablet){
+      margin-bottom: 40px;
+    }
+  }
+  &__item {
+    text-align: left;
+    color: $color-content-lighter;
+
+    &-wrapper{
+      padding: 50px;
+      display: flex;
+      background-color: $color-white;
+      border-radius: 2px;
+      margin-right: 70px;
+
+      @include screen-max(laptop){
+        padding: 30px;
+        display: block;
+        margin-right: 0;
+      }
+
+      @include screen-max(tablet){
+        padding: 25px 10px;
+      }
+
+      @include screen-max(mobile){
+        padding: 25px 2px;
+      }
+
+    }
+
+    &-info {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+      border-radius: 3px;
+      background-color: $color-white;
+      padding: 35px 40px;
+      position: relative;
+      z-index: 1;
+      margin-left: 50px;
+      margin-right: -70px;
+
+      @include screen-max(laptop){
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        margin: 30px 0 0;
+        box-shadow: none;
+        padding: 30px 15px 0;
+      }
+    }
+
+    &-title {
+      color: $color-content;
+      font-size: 1.7rem;
+      line-height: 1;
+      letter-spacing: 1.44px;
+      font-weight: 300;
+      margin-bottom: 30px;
+
+      @include screen-max(tablet){
+        margin-bottom: 15px;
+      }
+    }
+
+    &-price {
+      color: $color-primary;
+      font-size: 1.3rem;
+      font-weight: 300;
+
+      .numbers {
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+    }
+
+    &-condition {
+      margin: 25px 0;
+      font-weight: 500;
+      font-size: 1.45rem;
+      padding: 0 30px;
+
+      @include screen-max(mobile){
+        margin: 5px 0;
+      }
+    }
+
+    &-buttons {
+      text-align: center;
+
+      .button {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @include screen-max(tablet){
+          padding-left: 10px;
+          padding-right: 10px;
+          display: block;
+        }
+
+        &__text{
+          font-size: 1rem;
+        }
+      }
+
+      @include screen-max(laptop){
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      @include screen-max(tabletXl){
+        display: block;
+      }
+
+    }
+
+    &-description {
+      margin: 30px 0 40px;
+      font-weight: 300;
+      font-size: 1.15rem;
+
+      @include screen-max(tablet){
+        margin-top: 15px;
+      }
+    }
+
+    &-images {
+      display: inline-flex;
+      flex-direction: column;
+      flex-shrink: 0;
+
+      @include screen-max(laptop){
+        width: 100%;
+      }
+    }
+
+    &-main-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &-additional-images {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 60px;
+
+      @include screen-max(laptop){
+        justify-content: center;
+      }
+    }
+
+    &-additional-image {
+      box-shadow: -4px 4px 15px rgba(34, 34, 34, 0.15);
+      background: $color-white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  &__slider{
+    margin-bottom: 0;
+
+    .slider__dots{
+      display: none;
+    }
+
+    @include screen-max(mobile){
+      margin-bottom: 50px;
+
+      .slider__dots{
+        display: flex;
+      }
+
+    }
+
+    .swiper-pagination-bullet{
+      background: rgba($color-white, .8);
+      &-active{
+        background: $color-white;
+      }
+    }
+  }
+}
