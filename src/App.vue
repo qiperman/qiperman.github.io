@@ -15,7 +15,6 @@
 import Work from "./components/Work.vue";
 import TheHeader from "./components/TheHeader";
 import PageTitle from "./components/PageTitle";
-import WORKS from "@public/works.json";
 
 export default {
   name: "App",
@@ -26,8 +25,15 @@ export default {
   },
   data() {
     return {
-      WORKS: WORKS
+      WORKS: []
     };
+  },
+  mounted() {
+    fetch("/works.json")
+      .then(resp => resp.json())
+      .then(json => {
+        this.WORKS = json;
+      });
   }
 };
 </script>
