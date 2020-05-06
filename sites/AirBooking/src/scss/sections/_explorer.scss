@@ -1,0 +1,53 @@
+.explorer{
+  padding: 160px 0;
+  background-color: $color-sky;
+
+  @include screen-max(tabletXl){
+    padding: 80px 0;
+  }
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+
+    @include screen-max(tabletXl){
+      display: block;
+    }
+  }
+
+  &__image{
+    flex: 2;
+    box-shadow: 3px 0 65px rgba(181, 203, 221, 0.8);
+    border: 5px solid $color-white;
+    background-color: $color-explorer-room-bg;
+    display: inline-flex;
+
+    @include screen-max(tabletXl){
+      display: flex;
+      border-bottom: none;
+    }
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info{
+    flex: 1;
+    box-shadow: 3px 0 21px rgba(181, 203, 221, 0.3);
+    background-color: $color-white;
+    padding: 50px;
+    margin-left: -230px;
+
+    @include screen-max(tabletXl){
+      margin-left: 0;
+      padding: 50px 15px;
+    }
+
+    &-title{
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+}

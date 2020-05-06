@@ -1,0 +1,10 @@
+@import "openSans";
+@import "gildaDisplay";
+
+@mixin font-primary(){
+  font-family: "Open sans", sans-serif;
+}
+
+@mixin font-secondary(){
+  font-family: "Gilda Display", sans-serif;
+}

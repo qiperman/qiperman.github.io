@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="59" viewBox="0 0 49 59">
+    <defs>
+        <clipPath id="e3eqa">
+            <path d="M47.996 29.5L2.004 3.006v52.988L47.996 29.5"/>
+        </clipPath>
+    </defs>
+     <path fill="none" stroke-miterlimit="20" stroke-width="6"
+                  d="M47.996 29.5v0L2.004 3.006v52.988L47.996 29.5v0" clip-path="url(&quot;#e3eqa&quot;)"/>
+</svg>

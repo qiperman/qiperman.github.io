@@ -1,0 +1,45 @@
+.rooms{
+  padding: 115px 0 125px;
+
+  @include screen-max(tabletXl){
+    padding: 80px 0 90px;
+  }
+
+  @include screen-max(tablet){
+    padding: 40px 0;
+  }
+
+  &__title{
+    margin-bottom: 80px;
+
+    @include screen-max(tabletXl){
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__item{
+    flex: 0 1 33.333%;
+    max-width: 33.333%;
+    padding: 15px;
+  }
+
+  @include screen-max(tabletXl){
+    &__item{
+      flex: 0 1 50%;
+      max-width: 50%;
+    }
+  }
+
+  @include screen-max(tablet){
+    &__item{
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
+  }
+}

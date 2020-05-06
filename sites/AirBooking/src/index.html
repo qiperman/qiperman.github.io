@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <meta name='viewport'
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Airbooking</title>
+</head>
+<body>
+
+<div class="page-wrapper">
+  <header class="page-header">
+    <div class="burger">
+      <span></span>
+    </div>
+
+    <a href="#" class="logo page-header__logo">
+      <img src="assets/images/logo.png" alt="Airbooking">
+    </a>
+
+    <div class="header-search">
+      <div class="header-search__icon">
+        <img src="~assets/icons/SearchIcon.svg" inline>
+      </div>
+      <div class="header-search__input">
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero__social">
+      <a href="#" class="page-hero__social-link">
+        <img src="~assets/icons/FacebookIcon.svg" inline>
+      </a>
+      <a href="#" class="page-hero__social-link">
+        <img src="~assets/icons/TwitterIcon.svg" inline>
+      </a>
+      <a href="#" class="page-hero__social-link">
+        <img src="~assets/icons/LinkedInIcon.svg" inline>
+      </a>
+      <a href="#" class="page-hero__social-link">
+        <img src="~assets/icons/InstagramIcon.svg" inline>
+      </a>
+    </div>
+    <div class="page-hero__content">
+      <div class="page-hero__bg">
+        <img src="assets/images/header-bg.png" class="page-hero__bg-img" alt="">
+      </div>
+
+      <h1 class="page-hero__title">A Brand New Hotel Beyond Ordinary</h1>
+
+      <a href="#" class="button button_round button_white page-hero__button">EXPLOERE IT</a>
+
+      <div class="page-hero__book page-booking">
+        <div class="page-booking__content">
+          <div class="page-booking__input">
+            <label for="" class="page-booking__input-label">CHECK IN</label>
+            <input type="date" class="page-booking__input-hidden js-date-from" readonly>
+            <div class="page-booking__input-selected"></div>
+            <div class="page-booking__input-select">
+              <span class="page-booking__input-select-text"></span>
+              <span class="page-booking__input-caret">
+                <img src="~assets/icons/CaretIcon.svg" inline>
+              </span>
+            </div>
+          </div>
+          <div class="page-booking__input">
+            <label for="" class="page-booking__input-label">CHECK OUT</label>
+            <input type="date" class="page-booking__input-hidden js-date-to" readonly>
+            <div class="page-booking__input-selected"></div>
+            <div class="page-booking__input-select">
+              <span class="page-booking__input-select-text"></span>
+              <span class="page-booking__input-caret">
+                <img src="~assets/icons/CaretIcon.svg" inline>
+              </span>
+            </div>
+          </div>
+          <div class="page-booking__input">
+            <label for="" class="page-booking__input-label">GUEST</label>
+            <select name="" id="" class="page-booking__input-hidden js-date-guests" >
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+            <div class="page-booking__input-selected"></div>
+            <div class="page-booking__input-select">
+              <span class="page-booking__input-select-text"></span>
+              <span class="page-booking__input-caret">
+                <img src="~assets/icons/CaretIcon.svg" inline>
+              </span>
+            </div>
+          </div>
+          <button class="button page-booking__button">
+            CHECK AVAILABILITY
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.page-hero -->
+
+  <section class="rooms">
+    <div class="wrapper">
+      <h2 class="rooms__title">Our Rooms</h2>
+
+      <div class="rooms__row">
+        <div class="rooms__item room-item">
+          <div class="room-item__content">
+            <div class="room-item__bg">
+              <img src="assets/images/rooms/1.png" alt="">
+            </div>
+            <a href="#" class="button button_secondary room-item__button">
+              FAMILY ROOM
+            </a>
+            <div class="room-item__price">
+              From 30$
+            </div>
+          </div>
+        </div>
+        <div class="rooms__item room-item">
+          <div class="room-item__content">
+            <div class="room-item__bg">
+              <img src="assets/images/rooms/2.png" alt="">
+            </div>
+            <a href="#" class="button button_secondary room-item__button">
+              LUXARY ROOM
+            </a>
+            <div class="room-item__price">
+              From 30$
+            </div>
+          </div>
+        </div>
+        <div class="rooms__item room-item">
+          <div class="room-item__content">
+            <div class="room-item__bg">
+              <img src="assets/images/rooms/3.png" alt="">
+            </div>
+            <a href="#" class="button button_secondary room-item__button">
+              SINGLE ROOM
+            </a>
+            <div class="room-item__price">
+              From 30$
+            </div>
+          </div>
+        </div>
+        <div class="rooms__item room-item">
+          <div class="room-item__content">
+            <div class="room-item__bg">
+              <img src="assets/images/rooms/4.png" alt="">
+            </div>
+            <a href="#" class="button button_secondary room-item__button">
+              DOUBLE ROOM
+            </a>
+            <div class="room-item__price">
+              From 30$
+            </div>
+          </div>
+        </div>
+        <div class="rooms__item room-item">
+          <div class="room-item__content">
+            <div class="room-item__bg">
+              <img src="assets/images/rooms/5.png" alt="">
+            </div>
+            <a href="#" class="button button_secondary room-item__button">
+              FAMILY ROOM
+            </a>
+            <div class="room-item__price">
+              From 30$
+            </div>
+          </div>
+        </div>
+        <div class="rooms__item room-item">
+          <div class="room-item__content">
+            <div class="room-item__bg">
+              <img src="assets/images/rooms/6.png" alt="">
+            </div>
+            <a href="#" class="button button_secondary room-item__button">
+              FAMILY ROOM
+            </a>
+            <div class="room-item__price">
+              From 30$
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.rooms -->
+
+  <section class="explorer">
+    <div class="wrapper">
+      <div class="explorer__image">
+        <img src="assets/images/explore.png">
+      </div>
+
+      <div class="explorer__info">
+        <h3 class="explorer__info-title">Explorer Your Best Room</h3>
+
+        <p class="explorer__info-description">
+          Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et
+          lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+          orci ut et lobortis. Phasellus enim libero.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- /.explorer -->
+
+  <section class="services">
+    <div class="wrapper">
+      <h2 class="services__title">Our Services</h2>
+      <div class="services__row">
+        <div class="services__item">
+          <div class="services__item-icon">
+            <img src="~assets/icons/RestaurantIcon.svg" inline>
+          </div>
+          <div class="services__item-title">
+            Restaurant
+          </div>
+          <div class="services__item-description">
+            Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et
+            lobortis.
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="services__item-icon">
+            <img src="~assets/icons/BaseballIcon.svg" inline>
+          </div>
+          <div class="services__item-title">
+            Sports Club
+          </div>
+          <div class="services__item-description">
+            Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et
+            lobortis.
+          </div>
+        </div>
+        <div class="services__item">
+          <div class="services__item-icon">
+            <img src="~assets/icons/CarIcon.svg" inline>
+          </div>
+          <div class="services__item-title">
+            Pick up
+          </div>
+          <div class="services__item-description">
+            Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et
+            lobortis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.services -->
+
+  <section class="find-room">
+    <div class="find-room__img">
+      <img src="assets/images/header-bg.png" alt="">
+    </div>
+    <div class="find-room__info">
+      <div class="find-room__title">Find Your Best Room Here</div>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+        qui ratione voluptatem sequi nesciunt.
+      </p>
+      <p>
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+        numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.
+      </p>
+      <a href="#" class="button button_white">Read More</a>
+    </div>
+  </section>
+  <!-- /.find-room -->
+
+  <section class="reviews">
+    <div class="wrapper">
+      <h2 class="reviews__title">From The Guest</h2>
+
+      <div class="reviews__review">
+        <div class="reviews__review-text">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+          dolores eos qui ratione voluptatem sequi nesciunt.
+        </div>
+
+        <div class="reviews__review-user">
+          <div class="reviews__review-user-avatar">
+            <img src="assets/images/avatar.png" alt="">
+          </div>
+          <div class="reviews__review-user-info">
+            <div class="reviews__review-user-name">
+              Andrew Strauss
+            </div>
+            <div class="reviews__review-user-from">
+              From New York, USA
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /.reviews -->
+
+  <section class="video-clip">
+    <div class="video-clip__bg">
+      <img src="assets/images/video.png" alt="">
+    </div>
+
+    <div class="wrapper">
+      <div>
+        <div class="video-clip__title">Keep Clam And Enjoy Vaction</div>
+        <div class="video-clip__play">
+          <img src="~assets/icons/PlayIcon.svg" inline>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.video-clip -->
+
+  <section class="news">
+    <div class="wrapper">
+      <h2 class="news__title">Latest News</h2>
+
+      <div class="news__row">
+        <div class="news__col">
+          <div class="news-item">
+            <div class="news-item__img">
+              <img src="assets/images/news/1.png" alt="">
+            </div>
+            <div class="news-item__info">
+              <div class="news-item__title">Lorem ipsum</div>
+              <div class="news-item__date">June 24, 2019</div>
+              <div class="news-item__text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna
+                et. Quisque euismod orci ut et lobortis.
+              </div>
+              <a href="#" class="button">Read More</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="news__col">
+          <a href="#" class="news-item news-item_only-image">
+            <div class="news-item__img">
+              <img src="assets/images/news/2.png" alt="">
+            </div>
+            <div class="news-item__info">
+              <div class="news-item__title">Lorem ipsum</div>
+              <div class="news-item__date">June 24, 2019</div>
+            </div>
+          </a>
+          <a href="#" class="news-item news-item_only-image">
+            <div class="news-item__img">
+              <img src="assets/images/news/3.png" alt="">
+            </div>
+            <div class="news-item__info">
+              <div class="news-item__title">Lorem ipsum</div>
+              <div class="news-item__date">June 24, 2019</div>
+            </div>
+          </a>
+        </div>
+        <div class="news__col">
+          <div class="news-item">
+            <div class="news-item__img">
+              <img src="assets/images/news/4.png" alt="">
+            </div>
+            <div class="news-item__info">
+              <div class="news-item__title">Lorem ipsum</div>
+              <div class="news-item__date">June 18, 2019</div>
+              <div class="news-item__text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna
+                et. Quisque euismod orci ut et lobortis.
+              </div>
+              <a href="#" class="button">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.news -->
+
+  <footer class="page-footer">
+    <div class="wrapper">
+      <div class="page-footer__row">
+        <div class="page-footer__col">
+          <div>
+            <a href="#" class="logo page-footer__section-title">
+              <img src="assets/images/logo.png" alt="Airbooking">
+            </a>
+            <div class="page-footer__description">
+              Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.
+            </div>
+            <div class="page-footer__contact">
+              <div class="page-footer__contact-icon">
+                <img src="~assets/icons/GeoIcon.svg" inline>
+              </div>
+              <div class="page-footer__contact-texts">
+                <p>2345 Lyon Avenue</p>
+                <p>Boston, MA, Massachusetts</p>
+              </div>
+            </div>
+            <div class="page-footer__contact">
+              <div class="page-footer__contact-icon">
+                <img src="~assets/icons/PhoneIcon.svg" inline>
+              </div>
+              <div class="page-footer__contact-texts">
+                <a href="#">508-960-5584</a>
+                <a href="#">857-366-4240</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__col">
+          <div class="page-footer__section-title page-footer__section-title_text">Quick Links</div>
+
+          <nav class="page-footer__menu">
+            <div class="page-footer__menu-col">
+              <a href="#">Accomodation</a>
+              <a href="#">Food & Drinks</a>
+              <a href="#">Beach Venues</a>
+              <a href="#">Amenities</a>
+            </div>
+            <div class="page-footer__menu-col">
+              <a href="#">Noordwijk</a>
+              <a href="#">Wellness</a>
+              <a href="#">Manifesto</a>
+            </div>
+          </nav>
+        </div>
+        <div class="page-footer__col">
+          <div class="page-footer__section-title page-footer__section-title_text">Connect With Us</div>
+
+          <div class="page-footer__social">
+            <a href="#" class="page-footer__social-link">
+              <img src="~assets/icons/FacebookIcon.svg" inline>
+            </a>
+            <a href="#" class="page-footer__social-link">
+              <img src="~assets/icons/TwitterIcon.svg" inline>
+            </a>
+            <a href="#" class="page-footer__social-link">
+              <img src="~assets/icons/LinkedInIcon.svg" inline>
+            </a>
+            <a href="#" class="page-footer__social-link">
+              <img src="~assets/icons/YoutubeIcon.svg" inline>
+            </a>
+            <a href="#" class="page-footer__social-link">
+              <img src="~assets/icons/InstagramIcon.svg" inline>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page-footer__copyright">
+        © 2018 Airbooking - All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  <!-- /.page-footer -->
+</div>
+<!-- /.page-wrapper -->
+
+</body>
+</html>

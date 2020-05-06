@@ -1,0 +1,46 @@
+.button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-primary;
+  border: 1px solid transparent;
+  padding: 14px 18px;
+  line-height: 1;
+  transition: .3s;
+  cursor: pointer;
+  outline: none;
+
+  &:focus,
+  &:hover{
+    background-color: darken($color-primary, 10%);
+    color: $color-white;
+  }
+
+  &_round{
+    border-radius: 39px;
+  }
+
+  &_secondary{
+    background: $color-secondary;
+
+    &:focus,
+    &:hover{
+      background-color: darken($color-secondary, 10%);
+      color: $color-white;
+    }
+  }
+
+  &_white{
+    background-color: $color-white;
+    color: $color-heading;
+
+    &:focus,
+    &:hover{
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+}

@@ -1,0 +1,47 @@
+.news{
+  padding: 110px 0 130px;
+
+  @include screen-max(tabletXl){
+    padding: 60px 0 80px;
+  }
+
+  &__title{
+    margin-bottom: 100px;
+
+    @include screen-max(tabletXl){
+      margin-bottom: 50px;
+    }
+  }
+
+  &__row{
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+
+    @include screen-max(tabletXl){
+     display: block;
+    }
+  }
+
+  &__col{
+    flex: 1;
+
+    @include screen-max(tabletXl){
+      max-width: 50%;
+      margin: 0 auto;
+    }
+
+    @include screen-max(tablet){
+      max-width: 100%;
+    }
+  }
+
+  .news-item{
+    padding: 15px;
+    height: 100%;
+  }
+
+  .news-item_only-image{
+    height: 50%;
+  }
+}

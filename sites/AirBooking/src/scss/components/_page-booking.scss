@@ -1,0 +1,146 @@
+.page-booking{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+
+
+  &__content{
+    background-color: $color-white;
+    display: flex;
+
+    @include screen-max(tablet){
+      display: block;
+    }
+  }
+
+  &__input{
+    flex: 1;
+    padding: 30px 70px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+
+    @include screen-max(laptop){
+      padding: 25px 35px;
+    }
+
+    @include screen-max(tabletXl){
+      padding: 15px;
+    }
+
+    &-label{
+      display: block;
+      text-transform: uppercase;
+      color: $color-input;
+      margin-bottom: 25px;
+      @include screen-max(laptop){
+        margin-bottom: 15px;
+      }
+
+      @include screen-max(laptop){
+        margin-bottom: 5px;
+      }
+    }
+
+    &-hidden{
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      left: 70px;
+      right: 70px;
+      width: calc(100% - 140px);
+      opacity: 0;
+      cursor: pointer;
+
+      &:hover{
+        & ~ .page-booking__input-selected{
+          color: $color-primary;
+        }
+
+        & ~ .page-booking__input-select{
+          .page-booking__input-select-text,
+          .page-booking__input-caret{
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    &-selected{
+      @include font-secondary();
+      font-size: 5.5rem;
+      text-transform: uppercase;
+      color: $color-input;
+      margin-bottom: 25px;
+      user-select: none;
+      cursor: pointer;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 4.5rem;
+
+      @include screen-max(laptop){
+        font-size: 4rem;
+        margin-bottom: 15px;
+      }
+
+      @include screen-max(tabletXl){
+        font-size: 3.5rem;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-select{
+      @include font-secondary();
+      font-size: 1.5rem;
+      color: $color-input;
+      text-transform: uppercase;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      cursor: pointer;
+      text-align: center;
+      padding-left: 20px;
+      transition: .3s;
+    }
+
+    &-caret{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      margin-left: 10px;
+      color: $color-input;
+      transition: .3s;
+
+      svg{
+        width: 100%;
+        fill: currentColor;
+      }
+    }
+  }
+
+  &__button{
+    @include font-secondary();
+    flex: 1;
+    line-height: 1.5;
+    font-size: 1.875rem;
+    margin-left: 50px;
+
+    @include screen-max(laptop){
+      margin-left: 10px;
+    }
+
+    @include screen-max(tabletXl){
+      font-size: 1.5rem;
+    }
+
+    @include screen-max(tablet){
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+  }
+}
