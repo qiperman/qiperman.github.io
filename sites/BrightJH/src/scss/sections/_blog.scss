@@ -1,0 +1,168 @@
+.blog {
+  padding-top: 100px;
+  padding-bottom: 85px;
+
+  @include screen-max(laptop){
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    max-width: 960px;
+    margin: 0 auto 85px;
+    text-align: center;
+    color: $color-content-darken;
+    line-height: 24px;
+
+    @include screen-max(laptop){
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin: -15px;
+
+    @include screen-max(laptop){
+      display: block;
+    }
+  }
+
+  &__col {
+    flex: 1;
+  }
+
+  &__item {
+    padding: 15px;
+    display: flex;
+
+    &-content {
+      display: flex;
+      flex: 1;
+      box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.15);
+      background-color: #fefefe;
+
+      @include screen-max(tablet){
+        flex-direction: column;
+      }
+    }
+
+    &-read-more{
+      color: #484949;
+      font-size: 1.125rem;
+      text-decoration: none;
+      font-weight: 700;
+      line-height: 2;
+      text-transform: uppercase;
+      transition: .3s;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    &-image{
+      position: relative;
+      width: 170px;
+
+      img{
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      @include screen-max(tablet){
+        width: 100%;
+        max-height: 320px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    &-date{
+      background: $color-primary;
+      display: inline-block;
+      text-align: center;
+      color: $color-white;
+      padding: 4px 8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &-day{
+      font-size: 1.35rem;
+      display: block;
+    }
+
+    &-month{
+      display: block;
+      font-size: 1.125rem;
+    }
+
+    &-title{
+      font-size: 1.33rem;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    &-text{
+      flex: 1;
+      padding: 30px;
+
+      @include screen-max(tablet){
+        padding: 30px 20px;
+      }
+    }
+
+    &_b {
+      height: 100%;
+
+      .blog__item {
+
+        &-image{
+          width: 100%;
+          max-height: 50%;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &-content {
+          flex-direction: column;
+        }
+
+        &-date{
+          padding: 10px 16px;
+        }
+
+        &-title{
+          color: $color-primary;
+          max-width: 330px;
+        }
+
+
+        &-text{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 30px 20px;
+        }
+
+      }
+    }
+  }
+
+}

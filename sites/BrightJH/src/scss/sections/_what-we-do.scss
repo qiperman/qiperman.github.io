@@ -1,0 +1,74 @@
+.what-we-do{
+  padding: 115px 0;
+
+  @include screen-max(laptop){
+    padding: 80px 0;
+  }
+  @include screen-max(tablet){
+    padding: 40px 0;
+  }
+
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-max(tablet){
+      display: block;
+    }
+  }
+
+  &__img{
+
+    img{
+      display: block;
+    }
+
+    @include screen-min(1600px){
+      margin-left: -180px;
+    }
+
+    @include screen-max(laptop){
+      flex: 1;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    @include screen-max(tablet){
+      max-width: 320px;
+      margin: 0 auto 40px;
+
+    }
+
+  }
+
+  &__title{
+    color: $color-content;
+    margin-bottom: 40px;
+  }
+
+  &__description{
+    color: $color-content;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin-bottom: 50px;
+  }
+
+  &__content{
+    padding-left: 50px;
+
+    @include screen-max(laptop){
+      flex: 1;
+      padding-left: 30px;
+    }
+
+    @include screen-max(tablet){
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.page-footer{
+  background-color: $color-gray;
+  padding: 105px 0;
+
+  @include screen-max(laptop){
+    padding: 40px 0;
+  }
+
+  .wrapper{
+
+  }
+
+  &__row{
+    margin: -15px;
+    display: flex;
+    align-items: flex-start;
+
+    @include screen-max(laptop){
+      display: block;
+    }
+  }
+
+  &__title{
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+
+  &__logo{
+    margin-bottom: 30px;
+  }
+
+  &__description{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #484949;
+    width: 280px;
+    text-align: justify;
+
+    @include screen-max(laptop){
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__twit{
+    color: $color-content;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: underline;
+    letter-spacing: 0.8px;
+
+    &+&{
+      margin-top: 40px;
+    }
+    span{
+      color: $color-primary;
+    }
+  }
+
+  &__offices-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  &__link{
+    display: block;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    color: $color-content;
+    white-space: nowrap;
+
+    &+&{
+      margin-top: 15px;
+    }
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__map-info{
+    //width: 280px;
+    min-width: 380px;
+
+    @include screen-max(laptop){
+      max-width: 100%;
+    }
+  }
+
+  &__map{
+    width: 100%;
+
+    img{
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+      height: auto;
+    }
+  }
+
+  &__col{
+    padding: 15px;
+  }
+}

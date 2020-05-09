@@ -1,0 +1,23 @@
+//=== COLORS ===
+$color-white: #ffffff;
+$color-black: #000000;
+$color-primary: #16c2a3;
+$color-content: #4b4b4d;
+$color-input-bg: #fafafa;
+$color-content-darken: #282828;
+$color-gray: #f8f8f8;
+$color-button-text: #fafeff;
+//=== /COLORS ===
+
+//=== SIZING ===
+$container-width: 1200px;
+$font-size: 16px;
+$line-height: 1.2;
+//=== /SIZING ===
+
+$breakpoints: (
+        "mobile": 576px,
+        "tablet": 768px,
+        "laptop": 1200px,
+        "fullscreen": 1600px
+);

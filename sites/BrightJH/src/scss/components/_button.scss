@@ -1,0 +1,38 @@
+.button{
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  color: $color-button-text;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 28px;
+  background-color: $color-primary;
+  padding: 20px 40px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:focus,
+  &:hover{
+    background-color: darken($color-primary, 10%);
+  }
+
+  &_secondary{
+    background-color: $color-content;
+
+    &:focus,
+    &:hover{
+      background-color: darken($color-content, 10%);
+    }
+  }
+
+  &_gradient{
+    background-color: $color-content-darken;
+    background-image: linear-gradient(to right, #04c2a8 0%, #fec667 100%);
+
+    &:focus,
+    &:hover{
+      background-image: linear-gradient(to right, darken(#04c2a8, 10%) 0%, darken(#fec667, 10%) 100%);
+    }
+  }
+}

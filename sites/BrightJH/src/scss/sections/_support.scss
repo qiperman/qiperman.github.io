@@ -1,0 +1,49 @@
+.support{
+  padding-top: 70px;
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+
+    @include screen-max(tablet){
+      flex-direction: column;
+    }
+  }
+
+  &__info{
+    transform: translateY(50%);
+
+    @include screen-max(laptop){
+      transform: none;
+      flex: 1;
+    }
+
+    @include screen-max(laptop){
+      order: 2;
+    }
+  }
+
+  &__img{
+    @include screen-max(laptop){
+      flex: 1;
+      img{
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    @include screen-max(tablet){
+      order: 1;
+      max-width: 320px;
+      margin: 20px auto 40px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  &__description{
+    margin-bottom: 50px;
+  }
+}

@@ -1,6 +1,12 @@
 [
   {
     "type": "Верстка",
+    "title": "Bright JH",
+    "img": "4.png",
+    "link": "/sites/BrightJH/build/index.html"
+  },
+  {
+    "type": "Верстка",
     "title": "AirBooking",
     "img": "4.png",
     "link": "/sites/AirBooking/build/index.html"
