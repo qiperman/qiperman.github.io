@@ -1,0 +1,35 @@
+.input{
+
+  input{
+    font: inherit;
+    border: 0.091rem solid #7a7a7a;
+    color: #3a4047;
+    letter-spacing: 0.14rem;
+    padding: 20px 25px;
+    background: transparent;
+    outline: none;
+    height: 100%;
+    transition: .3s ease;
+    width: 100%;
+    font-size: 1rem;
+
+    @include screen-max(tabletXl){
+      padding: 15px 20px;
+      font-size: .9rem;
+    }
+
+    &:focus{
+      box-shadow: 0 0 5px #7a7a7a;
+
+      &::placeholder{
+        color: transparent;
+      }
+    }
+
+    &::placeholder{
+      color: #3a4047;
+      transition: .15s ease;
+    }
+  }
+
+}

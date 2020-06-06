@@ -1,0 +1,70 @@
+html{
+  font-size: $font-size;
+  line-height: $line-height;
+
+  @include screen-max(mobile){
+    font-size: 16px;
+  }
+}
+
+body{
+  @include font-primary();
+  font-size: 1rem;
+  color: $color-content;
+}
+
+.wrapper{
+  max-width: $container-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 4.545rem;
+  font-weight: 700;
+
+  @include screen-max(laptop){
+    font-size: 3.545rem;
+  }
+
+  @include screen-max(tablet){
+    font-size: 2.545rem;
+  }
+
+  @include screen-max(mobile){
+    font-size: 1.9rem;
+  }
+}
+
+h2{
+  font-size: 1.455rem;
+  font-weight: 700;
+  color: $color-black;
+  letter-spacing: 0.327rem;
+
+  @include screen-max(mobile){
+    font-size: 1.255rem;
+  }
+}
+
+h3{
+  color: $color-black;
+  font-size: 1.364rem;
+  font-weight: 500;
+  letter-spacing: 0.191rem;
+
+  @include screen-max(mobile){
+    font-size: 1.164rem;
+  }
+}
+
+h5{
+  color: $color-black;
+  font-size: 0.864rem;
+  font-weight: 700;
+  letter-spacing: 0.273rem;
+
+  @include screen-max(mobile){
+    font-size: 1rem;
+  }
+}

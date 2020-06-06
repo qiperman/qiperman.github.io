@@ -1,0 +1,45 @@
+.travel{
+  padding: 100px 0 65px;
+
+  @include screen-max(tablet){
+    padding: 30px 0 0;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__description{
+    margin-top: 40px;
+    //padding-top: 40px;
+
+    @include screen-max(mobile){
+      margin-top: 30px;
+    }
+  }
+
+  &__row{
+    padding-top: 65px;
+    margin: -15px;
+    display: flex;
+
+    @include screen-max(laptop){
+      display: block;
+    }
+
+    @include screen-max(mobile){
+      padding-top: 30px;
+    }
+  }
+
+  &__block{
+    flex: 1;
+    padding: 15px;
+
+    @include screen-max(laptop){
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

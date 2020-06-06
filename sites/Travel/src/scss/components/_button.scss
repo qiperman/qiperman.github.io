@@ -1,0 +1,66 @@
+.button{
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  font-size: 0.818rem;
+  font-weight: 400;
+  letter-spacing: 0.115rem;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease;
+
+  &_default{
+    color: $color-black;
+    background-color: #dddcdc;
+    border-color: #dddcdc;
+
+    &:hover,
+    &:focus{
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
+
+  &_outline{
+    background: transparent;
+  }
+
+  &_white{
+    color: $color-white;
+  }
+
+  &_black{
+    color: $color-black;
+  }
+
+  &_filled-black{
+    color: $color-white;
+    background: $color-black;
+    border-color: $color-black;
+
+    &:hover,
+    &:focus{
+      background: $color-white;
+      color: $color-black;
+    }
+  }
+
+  &_outline.button_white:focus,
+  &_outline.button_white:hover{
+    background: $color-white;
+    color: $color-black;
+  }
+
+  &_outline.button_black:focus,
+  &_outline.button_black:hover{
+    background: $color-black;
+    color: $color-white;
+  }
+
+  &:focus{
+    box-shadow: 0 0 5px #7a7a7a;
+  }
+}

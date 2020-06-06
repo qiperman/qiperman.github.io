@@ -1,0 +1,51 @@
+.photos{
+  padding: 100px 0 65px;
+
+  @include screen-max(tablet){
+    padding: 50px 0;
+  }
+
+  @include screen-max(mobile){
+    padding: 30px 0;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__description{
+    margin-top: 40px;
+    //padding-top: 40px;
+  }
+
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    margin: 90px -10px -10px;
+
+    @include screen-max(tablet){
+      margin-top: 40px;
+    }
+
+    @include screen-max(mobile){
+      margin: 25px -5px -5px;
+    }
+
+    img{
+      display: block;
+      flex-grow: 1;
+      margin: auto;
+      position: relative;
+      height: 445px;
+      overflow: hidden;
+      object-fit: cover;
+      padding: 10px;
+
+      @include screen-max(mobile){
+        padding: 5px
+      }
+    }
+  }
+}

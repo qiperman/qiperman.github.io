@@ -1,0 +1,45 @@
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 460px;
+  margin: 0 auto;
+
+  @include screen-max(mobile){
+    justify-content: center;
+  }
+
+
+  &__link{
+    text-decoration: none;
+    color: $color-white;
+    font-size: 0.909rem;
+    font-weight: 400;
+    letter-spacing: 0.187rem;
+    padding: 10px 15px;
+    position: relative;
+    outline: none;
+
+    //@include screen-max(tablet){
+    //  font-size: 0.75rem;
+    //}
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $color-white;
+      transition: width .3s ease;
+    }
+
+    &:focus,
+    &:hover{
+      &::after{
+        width: 100%;
+      }
+    }
+  }
+}

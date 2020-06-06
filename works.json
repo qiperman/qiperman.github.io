@@ -1,6 +1,12 @@
 [
   {
     "type": "Верстка",
+    "title": "Travel",
+    "img": "Travel.png",
+    "link": "/sites/Travel/build/index.html"
+  },
+  {
+    "type": "Верстка",
     "title": "Bright JH",
     "img": "5.png",
     "link": "/sites/BrightJH/build/index.html"

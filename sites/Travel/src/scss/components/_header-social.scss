@@ -1,0 +1,44 @@
+.header-social {
+  position: absolute;
+  right: 20px;
+  top: 90%;
+  height: auto;
+  width: 80vh;
+  display: inline-flex;
+  justify-content: space-around;
+
+  transform: rotate(90deg);
+  transform-origin: top right;
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 0.909rem;
+    font-weight: 400;
+    letter-spacing: 0.127rem;
+    display: inline-block;
+    white-space: nowrap;
+    outline: none;
+    transition: color .3s ease;
+
+    &:focus,
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+  @include screen-max(laptop){
+    transform: none;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    right: 0;
+    margin-top: 15px;
+
+    &__link{
+      padding: 10px 15px;
+      font-size: 0.6rem;
+    }
+  }
+
+}

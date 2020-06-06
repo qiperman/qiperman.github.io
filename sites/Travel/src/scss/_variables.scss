@@ -1,0 +1,21 @@
+//=== COLORS ===
+$color-white: #fff;
+$color-black: #000000;
+$color-content: #5b5b5c;
+$color-light: #c4c4c4;
+//=== /COLORS ===
+
+//=== SIZING ===
+$container-width: 1700px;
+$font-size: 22px;
+$line-height: 1;
+//=== /SIZING ===
+
+
+$breakpoints: (
+        "mobile": 576px,
+        "tablet": 768px,
+        "tabletXl": 998px,
+        "laptop": 1200px,
+        "fullscreen": 1600px
+)

@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  font-size: 1.364rem;
+  color: #c5c5c5;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
+
+  &__prev, &__next {
+    color: #c9c9c9;
+    font-size: 1.5rem;
+    transition: .3s ease;
+
+    &:hover:not(.disabled){
+      cursor: pointer;
+      color: $color-black;
+    }
+  }
+
+  &__prev{
+    margin-right: 50px;
+  }
+
+  &__delimiter{
+    margin: 0 15px;
+    letter-spacing: 0.191rem;
+  }
+
+  &__total{
+    color: $color-black;
+  }
+
+  &__next{
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,69 @@
+.subscribe{
+  padding: 150px 0 105px;
+  background-color: #f4f4f4;
+
+  @include screen-max(laptop){
+    padding: 100px 0 55px;
+  }
+
+  @include screen-max(tablet){
+    padding: 50px 0 5px;
+  }
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h3{
+    line-height: 1.37;
+  }
+
+  &__description{
+    font-size: 0.818rem;
+    margin-top: 25px;
+  }
+
+  &__texts{
+    flex: 1 1 40%;
+    margin-bottom: 45px;
+
+    @include screen-max(tabletXl){
+      text-align: center;
+    }
+  }
+
+  &__form{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 60%;
+    margin: -15px -15px 45px;
+
+    @include screen-max(tabletXl){
+      flex-basis: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__input{
+    padding: 15px;
+    min-width: 300px;
+    flex: 1;
+
+    &_button{
+      flex: 0 0 auto;
+      @include screen-max(tabletXl){
+        flex: 1;
+      }
+    }
+  }
+
+  &__button{
+    padding: 20px 80px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+}
